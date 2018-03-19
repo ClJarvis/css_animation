@@ -13,7 +13,7 @@ for (let i = 0; i < numOfStars; i++) {
 
 
 
-function getRandonPosition() {
+function getRandomPosition() {
   var y = window.innerWidth;
   var x = window.innerHeight;
   var randomX = Math.floor(Math.random()*x);
