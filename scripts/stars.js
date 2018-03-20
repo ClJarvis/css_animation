@@ -11,7 +11,7 @@ for (let i = 0; i < numOfStars; i++) {
     document.body.append(star);
 }
 
-const numOfStarsFade = 100;
+const numOfStarsFade = 30;
 
 //
 for (let i = 0; i < numOfStarsFade; i++) {

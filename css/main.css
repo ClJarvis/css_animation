@@ -82,7 +82,7 @@ body {
 }
 
 p {
-  color: red;
+  color: #FFFF82;
 }
 
 #textField {
@@ -112,7 +112,7 @@ p {
 /* Scrolling animation episode not title */
 
 #content {
-  animation: scroll 100s liner 16s;
+  animation: scroll 100s linear 16s;
   position: absolute;
   top: 100%;
 }
@@ -122,11 +122,11 @@ p {
 }
 
 @keyframes scroll {
-  0% {
-    top: 100%;
-  }
-  100% {
-    top: -170%;
-  }
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
 }
 
