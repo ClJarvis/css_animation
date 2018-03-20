@@ -6,9 +6,18 @@ body {
 
 .star {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 4px;
+  height: 4px;
   background-color: white;
+  border-radius: 80%;
+}
+
+.star2 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 80%;
 }
 
 .intro {
@@ -73,12 +82,13 @@ body {
 }
 
 p {
-  color: #FFFF82;
+  color: red;
 }
 
-#textFeild {
+#textField {
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
   text-align: justify;
   position: absolute;
   margin-left: -9em;
@@ -91,14 +101,13 @@ p {
   left: 50%;
 }
 
-#textFeild:after {
+#textField:after {
   position: absolute;
   content: '';
   bottom: 60%;
   left: 0;
   right: 0;
-  top: o;
-
+  top: 0;
 }
 /* Scrolling animation episode not title */
 
@@ -108,7 +117,7 @@ p {
   top: 100%;
 }
 
-#espisode, #title {
+#episode, #title {
   text-align: center;
 }
 
