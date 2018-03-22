@@ -1,13 +1,12 @@
 body {
-  background: blue;
+  background: black;
   color: white;
   margin: 0;
 }
 
 .letterbox {
-  background: red;
-  margin: 100px;
-  height: 200px;
+  background: white;
+  height: 40px;
 }
 
 .star {
@@ -29,7 +28,7 @@ body {
 .intro {
   position: absolute;
   top: 45%;
-  left: 50%;
+  left: 45%; /* 50  try -9em to match text?? */
   z-index: 1;
   animation: intro 6s ease-out 1s;
   color: rgb(75, 213, 238);
@@ -58,7 +57,7 @@ body {
 .logo {
   position: absolute;
   top: 20%;
-  left: 45%;
+  left: 40%; /* was 45 */
   z-index: 1;
   margin: auto;
   animation: logo 9s ease-out 9s;
@@ -72,7 +71,7 @@ body {
 /* Scale the logo */
 @keyframes logo {
   0% {
-    width: 18em;
+    width: 58em;
     tranform: Scale(2.75);
     opacity: 1;
   }
@@ -136,3 +135,7 @@ p {
     }
 }
 
+.footer {
+height: 50px;
+  margin-top: -50px;
+}
