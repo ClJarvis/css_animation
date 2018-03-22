@@ -1,7 +1,13 @@
 body {
-  background: black;
+  background: blue;
   color: white;
   margin: 0;
+}
+
+.letterbox {
+  background: red;
+  margin: 100px;
+  height: 200px;
 }
 
 .star {
