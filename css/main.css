@@ -5,10 +5,24 @@ body {
 }
 
 .letterbox {
-  background: red;
-  height: 40px;
+  background: #1d1414;
+  height: 75px;
   z-index: 10;
+  position: sticky;
+  border-bottom: 1px solid darkgray;
 }
+
+.footer {
+height: 75px;
+background: blue;
+z-index: 10;
+position: absolute;
+width:100%;
+bottom:0px;
+border-top: 1px solid darkgray;
+}
+
+
 
 .star {
   position: absolute;
@@ -136,7 +150,4 @@ p {
     }
 }
 
-.footer {
-height: 50px;
-  margin-top: -50px;
-}
+
