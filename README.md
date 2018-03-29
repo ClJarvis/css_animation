@@ -1,15 +1,16 @@
 # CSS animation project
 
-+ Recreating the Star Wars Crawl with CSS
-Based on a tutorial recreating the opening crawl fron Star Wars
-* used CSS to creat scrolling text
-* CSS for moivng logo
-* JS to randomly place stars in background
+## Recreating the Star Wars Crawl with CSS
+* Based on a tutorial recreating the opening crawl from Star Wars.
+* Used CSS Transitions to create scrolling text.
+* CSS for moving logo.
+* JS to randomly place stars in background.
 
 # Expanded on tutorial
 * Added second section of stars and changed the opacity to give more depth to star field.
-* Added widescreen bars at top nd bottom of screen.
-* Made three Paragraphs of text
-* used JavaScript to replace all the words in a paragraph.
+* Added widescreen bars at top and bottom of screen for Theater look.
+* Gave widescreen a small border.
+* Made three Paragraphs of text. (original version had only 1).
+* Used JavaScript to replace all the words in a paragraph.
 
-** CSS, HTML, JavaScript**
+**CSS, HTML, JavaScript**
