@@ -12,18 +12,6 @@ body {
   border-bottom: 1px solid #6b6936;
 }
 
-.footer {
-height: 75px;
-background: #000;
-z-index: 10;
-position: absolute;
-width:100%;
-bottom:0px;
-border-top: 1px solid #6b6936;
-text-align: right;
-}
-
-
 
 .star, .star2 {
   position: absolute;
@@ -148,5 +136,34 @@ p {
         top: -170%;
     }
 }
+
+.footer {
+height: 75px;
+background: #000;
+z-index: 10;
+position: absolute;
+width:100%;
+bottom:0px;
+border-top: 1px solid #6b6936;
+text-align: right;
+}
+
+#ties {
+  position: absolute;
+  top: 45%;
+  animation: ties 6s ease-out 1s;
+  color: #999;
+
+}
+
+@keyframes ties {
+  from {
+    right: 0;
+  }
+  to {
+    right: 50%;
+  }
+}
+
 
 
