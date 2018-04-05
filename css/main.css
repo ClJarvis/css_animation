@@ -149,8 +149,8 @@ text-align: right;
 }
 
 #ties {
-/*  position: absolute; */
-  top: 45%;
+  position: absolute;
+  top: 25%;
   animation: ties 26s ease-out 10s;
   color: #999;
 
@@ -161,20 +161,21 @@ text-align: right;
     right: 0;
   }
   to {
-    right: 77%;
+    right: 110%;
   }
   0% {
     opacity: 0;
   }
   20% {
-    opacity: 1;
+    opacity: 0;
   }
-  90% {
+  70% {
     opacity: 1;
   }
 
   100% {
     opacity: 0;
+    z-index: -1;
   }
 
 }
