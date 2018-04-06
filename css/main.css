@@ -151,10 +151,20 @@ text-align: right;
 #ties {
   position: absolute;
   top: 25%;
-  animation: ties 26s ease-out 10s;
+  animation-delay: 80s;
+  animation: ties 16s ease-out 10s;
   animation-iteration-count: 3;
   color: #999;
   width: 100%;
+}
+
+#ties:after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 @keyframes ties {
@@ -164,14 +174,15 @@ text-align: right;
   to {
     right: 100%;
   }
-  0% {
+
+ @keyframes fade  0% {
     opacity: 0;
   }
   30% {
     opacity: 1;
   }
   70% {
-    opacity: 1;
+    opacity: 0;
   }
 
   100% {
