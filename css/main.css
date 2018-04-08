@@ -151,21 +151,14 @@ text-align: right;
 #ties {
   position: absolute;
   top: 25%;
-  animation-delay: 80s;
-  animation: ties 16s ease-out 10s;
+  animation-delay: 42s;
+  -webkit-animation-delay: 42s;
+  animation: ties 16s ease-out 42s;
   animation-iteration-count: 3;
   color: #999;
   width: 100%;
 }
 
-#ties:after{
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-}
 
 @keyframes ties {
   from {
@@ -175,7 +168,15 @@ text-align: right;
     right: 100%;
   }
 
- @keyframes fade  0% {
+#ties:after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+ /*@keyframes fade  0% {
     opacity: 0;
   }
   30% {
@@ -188,7 +189,7 @@ text-align: right;
   100% {
     opacity: 1;
     z-index: -1;
-  }
+  }  */
 
 }
 
