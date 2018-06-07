@@ -1,6 +1,49 @@
 <head>
 <!-- Local CSS -->
 <link rel='stylesheet' type='text/css' href='css/main.css'>
+<style type="text/css">
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform:translateY(0);
+  }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem);
+  }
+}
+
+
+.outer {
+  background: black;
+  height: 50%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouncing-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouncing-loader > div {
+  margin: 3rem 0.2 rem;
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+
+#bouncing-loader > div:nth-child(2){
+  animation-delay: 0.2s;
+}
+
+#bouncing-loader > div:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+
+</style>
 </head>
 
 <body>
@@ -10,7 +53,7 @@
 </section>
 </div>
 
-<div class="body">
+<div class="body"  style="display:none"; id="myDiv">
 <section class="intro">
   A long time ago, in a galaxy far,<br> far away....
 </section>
@@ -41,6 +84,31 @@
 <audio preload="auto" autoplay>
   <source src="files/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg">
 </audio>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div class="outer">
+<div id="bouncing-loader">
+  <div>|-O-|
+{-o-}
+|-O-|</div>
+</div>
+</div>
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 5000);
+}
+
+function showPage() {
+  document.getElementById("bouncing-loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 <!-- Local scripts -->
 <script src='scripts/stars.js'></script>

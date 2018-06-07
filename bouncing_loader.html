@@ -1,0 +1,75 @@
+<body onload="myFunction()" style="margin:0;">
+
+<div class="outer">
+<div id="bouncing-loader">
+  <div>|-O-|  {-o-}  |-O-|</div>
+</div>
+</div>
+
+<div style="display:none"; id="myDiv"><h2>Hereeeeeee's Content</h2></div>
+<style type="text/css">
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform:translateY(0);
+  }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem);
+  }
+}
+
+body {
+  background: #0097a7;
+}
+.outer {
+  background: #0097a7;
+  height: 400px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouncing-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouncing-loader > div {
+
+  margin: 3rem 0.2 rem;
+
+  animation: bouncing-loader 0.6s infinite alternate;
+}
+
+#bouncing-loader > div:nth-child(2){
+  animation-delay: 0.2s;
+}
+
+#bouncing-loader > div:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+#myDiv {
+  text-align: center;
+}
+h2{
+  color: #84bbc3;
+}
+</style>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("bouncing-loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
