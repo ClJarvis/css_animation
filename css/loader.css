@@ -1,0 +1,36 @@
+
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform:translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-10rem);
+  }
+}
+
+
+.outer {
+  height: 80%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouncing-loader {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouncing-loader > div {
+  margin: 3rem 0.2 rem;
+  animation: bouncing-loader 0.9s infinite alternate;
+}
+
+
+
+
