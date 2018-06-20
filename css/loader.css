@@ -28,7 +28,7 @@
 
 #bouncing-loader > div {
   margin: 3rem 0.2 rem;
-  animation: bouncing-loader 0.9s infinite alternate;
+  animation: bouncing-loader 1.5s infinite alternate;
 }
 
 
